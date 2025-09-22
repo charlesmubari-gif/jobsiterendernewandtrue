@@ -1,0 +1,6 @@
+@model JobBoard.Models.Job
+<h2>@Model.Title</h2>
+<p>@Model.Description</p>
+<p><b>Company:</b> @Model.Company</p>
+<p><b>Location:</b> @Model.Location</p>
+<a href="/Applications/Apply?jobId=@Model.Id">Apply Now</a>

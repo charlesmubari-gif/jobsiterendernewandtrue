@@ -1,0 +1,11 @@
+@model IEnumerable<JobBoard.Models.Job>
+<h2>Job Listings</h2>
+<a href="/Jobs/Create">Post a Job</a>
+<ul>
+@foreach (var job in Model)
+{
+    <li>
+        <a href="/Jobs/Details/@job.Id">@job.Title</a> - @job.Company (@job.Location)
+    </li>
+}
+</ul>

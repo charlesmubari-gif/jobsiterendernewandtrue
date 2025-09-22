@@ -1,0 +1,9 @@
+@model JobBoard.Models.Application
+<h2>Apply for Job</h2>
+<form method="post">
+    <input type="hidden" asp-for="JobId" value="@ViewBag.JobId" />
+    <label>Name:</label><input asp-for="ApplicantName" /><br/>
+    <label>Email:</label><input asp-for="Email" /><br/>
+    <label>Resume:</label><textarea asp-for="Resume"></textarea><br/>
+    <button type="submit">Submit</button>
+</form>

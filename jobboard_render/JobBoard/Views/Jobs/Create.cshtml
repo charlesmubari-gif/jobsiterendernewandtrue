@@ -1,0 +1,9 @@
+@model JobBoard.Models.Job
+<h2>Post a Job</h2>
+<form method="post">
+    <label>Title:</label><input asp-for="Title" /><br/>
+    <label>Description:</label><textarea asp-for="Description"></textarea><br/>
+    <label>Company:</label><input asp-for="Company" /><br/>
+    <label>Location:</label><input asp-for="Location" /><br/>
+    <button type="submit">Save</button>
+</form>
